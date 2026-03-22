@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    margin: 0;
+    background-color: #0a0e14;
+    color: #f8fafc;
+    font-family: 'Inter', sans-serif;
+  }
+
+  select option {
+    background-color: #1e2a3a;
+    color: #f8fafc;
+  }
+}
+
+@layer utilities {
+  .bg-surface-base {
+    background-color: #0a0e14;
+  }
+  .bg-surface-card {
+    background-color: #111827;
+  }
+  .bg-surface-elevated {
+    background-color: #1e2a3a;
+  }
+  .font-display {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+}
